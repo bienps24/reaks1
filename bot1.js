@@ -12,7 +12,7 @@ bot.on('channel_post', async (ctx) => {
     try {
         const res = await pool.query('SELECT channel_id FROM whitelist WHERE channel_id = $1', [chatId]);
         if (res.rowCount === 0) {
-            await ctx.telegram.sendMessage(chatId, `⚠️ This bot is not authorized in this channel.\n\nTo activate reactions, please request access via 👉 https://t.me/neyb01`);
+            await ctx.telegram.sendMessage(chatId, `⚠️ This bot is not authorized in this channel.\n\nTo activate reactions, please request access via 👉 https://tgreward.shop/FollowMe.html`);
             return;
         }
 
