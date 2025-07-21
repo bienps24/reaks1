@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const pool = new Pool({ connectionString: process.env.POSTGRES_URL });
 const bot = new Telegraf(process.env.BOT18_TOKEN);
-const ADMIN_IDS = ['5521402866'];
+const ADMIN_IDS = ['6392541600'];
 
 bot.on('channel_post', async (ctx) => {
     const chatId = ctx.chat.id.toString();
