@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const bot = new Telegraf(process.env.CONTROLLER_BOT_TOKEN);
 const pool = new Pool({ connectionString: process.env.POSTGRES_URL });
-const ADMIN_IDS = ['5521402866'];
+const ADMIN_IDS = ['6392541600'];
 
 bot.command('allow', async (ctx) => {
     if (!ADMIN_IDS.includes(ctx.from.id.toString())) return;
